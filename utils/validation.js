@@ -9,3 +9,13 @@ export const validatePassword = (password) => {
 
     return regExp.test(password);
 };
+
+export const isCorrectPhone = (phone) => {
+    return phone.replace(/\s/g, '').length === 12 && phone.startsWith('+371');
+};
+
+export const isCorrectDisplayName = (name) => {
+    const re=new RegExp('^[a-zA-Zа-яА-Я]+$');
+
+    return name.length > 2 && re.test(name);
+};

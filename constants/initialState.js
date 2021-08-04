@@ -19,6 +19,17 @@ export const initAuthState = {
     emailVerified: false
 };
 
+export const initProfileState = {
+    data: {},
+    photos: {},
+    fileUploadProcess: [],
+    isSaveProfile: false,
+    isModerator: false,
+    authRequests: [],
+    offers: [],
+    uid: ''
+}
+
 export const initAppState = {
     needToUpdate: false,
     appLoaded: true,
@@ -26,6 +37,21 @@ export const initAppState = {
     photoLoaded: true,
     lang: 'en',
     showInfoMessage: false
+};
+
+export const initPhotoObj = {
+    xs: undefined,
+    s: undefined,
+    m: undefined,
+    l: undefined,
+    big: undefined
+}
+
+export const initUsersState = {
+    photos: {},
+    chatUser: '',
+    requests: [],
+    users: {}
 };
 
 export const initialState = {

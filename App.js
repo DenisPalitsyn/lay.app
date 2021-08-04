@@ -20,37 +20,37 @@ import {initialState} from "./constants/initialState";
 import {localisation} from "./localisation/localisation";
 import thunk from "redux-thunk";
 import {LocalisationContext} from './localisation/context';
-import { LogBox } from 'react-native';
+import {LogBox} from 'react-native';
 
 if (firebase.apps.length === 0) {
-    firebase.initializeApp(firebaseConfig);
-    firebase.firestore();
-    firebase.storage();
-    firebase.functions();
+  firebase.initializeApp(firebaseConfig);
+  firebase.firestore();
+  firebase.storage();
+  firebase.functions();
 }
 
 export default function App() {
-    const store = createStore(rootReducer, initialState, applyMiddleware(thunk));
+  const store = createStore(rootReducer, initialState, applyMiddleware(thunk));
 
-    const {firebase, app} = store.getState();
-    const lang = firebase.profile.lang || app.lang;
-    const actualLocal = localisation[lang]
+  const {firebase, app} = store.getState();
+  const lang = firebase.profile.lang || app.lang;
+  const actualLocal = localisation[lang]
 
-    useEffect(() => {
-        LogBox.ignoreLogs(['Setting a timer for a long period of time']);
-    }, []);
+  useEffect(() => {
+    LogBox.ignoreLogs(['Setting a timer for a long period of time']);
+  }, []);
 
-    return (
-        <Provider store={store}>
-            <LocalisationContext.Provider value={actualLocal}>
-                <SafeAreaProvider>
-                    <PaperProvider theme={theme}>
-                        <LayApp/>
-                    </PaperProvider>
-                </SafeAreaProvider>
-                <StatusBar style="auto"/>
-            </LocalisationContext.Provider>
-        </Provider>
-    );
+  return (
+    <Provider store={store}>
+      <LocalisationContext.Provider value={actualLocal}>
+        <SafeAreaProvider>
+          <PaperProvider theme={theme}>
+            <LayApp/>
+          </PaperProvider>
+        </SafeAreaProvider>
+        <StatusBar style="auto"/>
+      </LocalisationContext.Provider>
+    </Provider>
+  );
 }
 

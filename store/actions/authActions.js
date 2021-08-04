@@ -17,6 +17,7 @@ export const signInWithEmailAndPassword = (email, password) => async (dispatch) 
         })
         .then(() => {
             // const {uid, email, metadata} = user;
+
             //
             // const {creationTime, lastSignInTime} = metadata;
 

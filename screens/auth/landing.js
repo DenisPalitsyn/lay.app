@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, ImageBackground} from 'react-native';
 import {Button} from "react-native-paper";
-import Logo from "../../components/base/Logo";
+import Logo from "../../components/img/Logo";
 import {SafeAreaView} from "react-native-safe-area-context";
 
 const image = require('../../assets/img/landing.jpg');

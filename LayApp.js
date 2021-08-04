@@ -7,6 +7,7 @@ import Main from "./screens/main";
 import Loading from "./screens/loading/loading";
 import {createSwitchNavigator, createAppContainer} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
+import EditProfile from "./screens/edit_profile";
 
 const AppStack = createStackNavigator({
     Main: {
@@ -14,8 +15,15 @@ const AppStack = createStackNavigator({
         navigationOptions: {
             headerShown: false
         }
+    },
+    EditProfile: {
+        screen: EditProfile,
+        navigationOptions: {
+            headerShown: false
+        }
     }
 });
+
 const AuthStack = createStackNavigator({
     Landing: {
         screen: Landing,

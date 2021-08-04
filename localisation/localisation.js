@@ -153,24 +153,7 @@ const localisation = {
     pasteLinks: 'Paste links to your Youtube or TikTok videos. Nude videos are prohibited.',
     photosTitle: 'Photos',
     videosTitle: 'Videos',
-    tabsTitles: [
-      {
-        label: '1. Index',
-        disabled: false
-      },
-      {
-        label: '2. About you',
-        disabled: false
-      },
-      {
-        label: '3. Secrets',
-        disabled: false
-      },
-      {
-        label: '4. Photos',
-        disabled: false
-      },
-    ],
+    tabsTitles: ['Profile', 'About you', 'Secrets', 'Photos'],
     citiesTitles: citiesEn,
     genderOptions: genderOptionsEn,
     lookingForOptions: lookingForOptionsEn,
@@ -306,13 +289,11 @@ const localisation = {
     cancel: 'Cancel',
     editRequests: 'Edit promo:',
     deletePromo: 'Delete promo',
-    mainProfilePhoto: 'Index profile photo',
+    mainProfilePhoto: 'Main profile photo',
     privacyLevel: 'Privacy level',
     privacyLevelOptions: privacyLevelEn,
     descriptionText: 'Description',
-    whenToMeet: 'When would you like to meet? Note that you can request a date not later than 1\n' +
-      '          week from now. You can leave it blank if it’s not critical for you - in this case\n' +
-      '          the request will be valid for 2 weeks from now.',
+    whenToMeet: 'When would you like to meet? Note that you can request a date not later than 1 week from now. You can leave it blank if it’s not critical for you - in this case the request will be valid for 2 weeks from now.',
     publish: 'Publish',
     chatRequest: 'Chat request',
     showPrivatePhotosText: 'Show private photos',
