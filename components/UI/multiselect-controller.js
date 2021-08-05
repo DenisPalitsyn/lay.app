@@ -6,7 +6,7 @@ import {LocalisationContext} from "../../localisation/context";
 import {Modal} from "./modal";
 import CheckBox from '@react-native-community/checkbox';
 
-export const MultiSelectController = ({control, name, rules, required, label, customValue, errors, options, setValue}) => {
+export const MultiSelectController = ({control, name, rules, required, label, errors, options, setValue}) => {
   const {completeMandatoryField} = useContext(LocalisationContext)
 
   const [visible, setVisible] = useState(false);
@@ -22,7 +22,7 @@ export const MultiSelectController = ({control, name, rules, required, label, cu
   const hideModal = () => setVisible(false);
 
   return (
-    <>
+    <View>
       <Controller
         control={control}
         name={name}
@@ -33,10 +33,11 @@ export const MultiSelectController = ({control, name, rules, required, label, cu
           },
           ...rules
         }}
-        render={({field: {value}}) => {
+        render={({field: {onBlur, value}}) => {
           return (
             <TouchableOpacity
               style={styles.select}
+              onBlur={onBlur}
               onPress={() => {
                 const checkedOptions = initialOptions.map(o => ({
                   ...o,
@@ -62,8 +63,8 @@ export const MultiSelectController = ({control, name, rules, required, label, cu
           )
         }}
       />
-      <HelperText type="error" visible={!!errors[name]}>
-        {errors[name]?.message || ''}
+      <HelperText type="error" visible={errors ? !!errors[name] : false}>
+        {(errors && errors[name]?.message) || ''}
       </HelperText>
       <Modal
         visible={visible}
@@ -90,11 +91,11 @@ export const MultiSelectController = ({control, name, rules, required, label, cu
         />
         <Button onPress={() => {
           const items = optionsList.filter(o => o.checked).map(o => o.value);
-          setValue(name, items);
+          setValue(name, items, {shouldValidate: true});
           hideModal();
         }}>OK</Button>
       </Modal>
-    </>
+    </View>
   )
 }
 

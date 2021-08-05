@@ -8,17 +8,19 @@ import {Photos} from "./photos";
 import {useTheme, Text} from "react-native-paper";
 import {StyleSheet, View} from "react-native";
 import {SafeAreaView} from "react-native-safe-area-context";
-import ProfileContext from "./profile_context";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import firebase from "firebase/app";
+import {FormProvider, useForm} from "react-hook-form";
+import {updateProfile} from "../../store/actions/profileActions";
 
-export default function EditProfile() {
+export default function EditProfile({navigation}) {
   const {
     personalInformation,
     tabsTitles,
-    backToProfile
+    // backToProfile
   } = useContext(LocalisationContext);
 
+  const dispatch = useDispatch();
   const theme = useTheme();
 
   const {uid} = firebase.auth().currentUser;
@@ -28,6 +30,12 @@ export default function EditProfile() {
   })
 
   const [index, setIndex] = useState(0);
+  const [submitting, setSubmitting] = useState(false);
+
+  const form = useForm({
+    mode: "all",
+    defaultValues: {...profile}
+  });
 
   const routes = [
     {key: 'main', title: tabsTitles[0]},
@@ -52,9 +60,52 @@ export default function EditProfile() {
     />
   );
 
+  const onSubmit = async v => {
+    setSubmitting(true);
+
+    const updateAndGoToProfile = async () => {
+      try {
+        await dispatch(updateProfile(v));
+      } catch (e) {
+        console.log('e', e);
+      }
+      setSubmitting(false);
+      navigation.navigate('Main');
+    }
+
+    const updateAndGoNext = async (optionalData) => {
+      try {
+        await dispatch(updateProfile({
+          ...v,
+          ...optionalData
+        }));
+      } catch (e) {
+        console.log('e', e);
+      }
+      setSubmitting(false);
+      setIndex(prev => prev + 1);
+    }
+
+    if (index === 0) {
+      if (profile.profileSubmitted) {
+        await updateAndGoToProfile();
+      } else {
+        await updateAndGoNext({profileSubmitted: true});
+      }
+    } else if (index === routes.length) {
+      await updateAndGoToProfile();
+    } else {
+      if (profile.profileSubmitted) {
+        await updateAndGoToProfile();
+      } else {
+        await updateAndGoNext();
+      }
+    }
+  }
+
   return (
     <SafeAreaView style={styles.container}>
-      <ProfileContext.Provider value={profile}>
+      <FormProvider submitting={submitting} onSubmit={onSubmit} {...form}>
         <View style={styles.titleWrap}>
           <Text style={styles.title}>{personalInformation}</Text>
         </View>
@@ -66,7 +117,7 @@ export default function EditProfile() {
           initialLayout={{width: '100%'}}
           sceneContainerStyle={styles.container}
         />
-      </ProfileContext.Provider>
+      </FormProvider>
     </SafeAreaView>
   )
 }

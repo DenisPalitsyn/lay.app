@@ -11,8 +11,7 @@ import Search from "./search";
 import Chats from "./chats";
 import Promotions from "./promotions";
 import firebase from "firebase";
-import UserContext from './user_context';
-import RootNavigationContext from "./root_navigation_context";
+import {RootNavigationContext, UserContext} from '../../utils/context';
 
 const ProfileStack = createStackNavigator();
 

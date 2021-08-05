@@ -117,9 +117,9 @@ const localisation = {
     personalInfoTitles: titlesEn,
     personalInfoPlaceholders: placeholdersEn,
     submitPersonalNumber: 'Your phone number won’t be visible to other users. It’s needed to verify your profile. Please submit your personal number.',
-    addPersonalNumber: 'Please add your phone number. It will  <strong>never</strong> be available to the Lay' +
+    addPersonalNumber: 'Please add your phone number. It will never be available to the Lay' +
       ' users. Admins need it to' +
-      ' verify your profile but will  <strong>never disclose</strong> it to anyone. We value your privacy and at' +
+      ' verify your profile but will never disclose it to anyone. We value your privacy and at' +
       ' the same time need' +
       ' all Lay users to be real people.',
     yourPhoneIsProtected: 'Your phone number is protected by General Data Protection Regulation (GDPR), a regulation in the European Union law. You are able to request a complete deletion of all your personal information on Lay contacting us on support@lay.ooo.',
@@ -132,18 +132,18 @@ const localisation = {
     submit: 'Submit',
     tellAboutYourself: 'Tell other people about yourself. All fields are not mandatory, you can skip it for now and add later if you want. Please don’t use strong language or leave any contacts (telephone, email, website, messenger ID, address). Your account will be suspended otherwise.',
     tellAboutYourSecrets: 'Tell people about your secrets. This information is not public: you’ll need to unlock this section of your profile to a user personally, while chatting. If you trust them enough.',
-    secretsAlert: 'Information from this section will not be publicly available. <strong>Nobody</strong> will see it' +
+    secretsAlert: 'Information from this section will not be publicly available. Nobody will see it' +
       ' on Lay' +
       ' website.',
     photoAlert: 'You can make your photos private so nobody will see them on your profile page on Lay.',
     whyAddPhoto: 'Why add photos? To increase your chances for a successful date 🙂 76% of $gender on Lay add photos' +
       ' of' +
-      ' themselves - their profiles are viewed more frequently and more people start chats with them. If you don’t want to disclose your personality, just choose <strong>Private</strong> option. In this case other people will see that you’ve got private photos and will ask your permission to view them, in the Lay Chat. Then you decide whether you want to give access or not 😉',
+      ' themselves - their profiles are viewed more frequently and more people start chats with them. If you don’t want to disclose your personality, just choose Private option. In this case other people will see that you’ve got private photos and will ask your permission to view them, in the Lay Chat. Then you decide whether you want to give access or not 😉',
     addInfoAboutYourSecrets: 'Add information about your sex preferences, gift expectations and travel' +
-      ' opportunities.  It <strong>won’t be shown</strong> on your profile page on Lay. You will be able to' +
+      ' opportunities.  It won’t be shown on your profile page on Lay. You will be able to' +
       ' open this' +
       ' section' +
-      ' to another person privately in the <strong>Lay Chat</strong>. There will be a special button for that.',
+      ' to another person privately in the Lay Chat. There will be a special button for that.',
     whyAddInfoAboutYourSecrets: 'Why add this anyway? For your future convenience :) These questions are quite' +
       ' frequently asked, and having all this stuff in one place being able to share with 1 click will just make your life easier. No useless talks and same things explained again and again. You will be able to edit this anytime.',
     noteThatBeforeModerator: 'Please note that your photos will be verified by a moderator. You can mark your photos as private: they won’t be shown publicly but you will be able to reveal them to another user. Alternatively, you can restrict them to be seen by moderators only.',
@@ -461,8 +461,8 @@ const localisation = {
     personalInfoTitles: titlesRu,
     personalInfoPlaceholders: placeholdersRu,
     submitPersonalNumber: 'Твой телефон никто не увидит, но он нужен для подтверждения профиля. Пожалуйста, добавь личный мобильный номер',
-    addPersonalNumber: 'Добавь свой номер телефона. Он <strong>не будет</strong> показан пользователям на Lay. Нашим' +
-      ' администраторам он нужен, чтобы подтвердить твою личность, но они <strong>никому</strong> его не раскроют.' +
+    addPersonalNumber: 'Добавь свой номер телефона. Он не будет показан пользователям на Lay. Нашим' +
+      ' администраторам он нужен, чтобы подтвердить твою личность, но они никому его не раскроют.' +
       ' Мы уважаем твою приватность и в то же время хотим, чтобы на Lay были только реальные профили.',
     yourPhoneIsProtected: 'Твой телефон защищен Законом о защите персональных данных Евросоюза (GDPR). Ты сможешь запросить у нас полное удаление своих данных, обратившись на support@lay.ooo.',
     completeMandatoryField: 'Обязательное поле. Пожалуйста, заполните',
@@ -474,16 +474,16 @@ const localisation = {
     submit: 'ОК',
     tellAboutYourself: 'Расскажи о себе. Все поля необязательные, можешь заполнить их позже. Пожалуйста, не используй ругательства и не оставляй никаких контактов (телефон, email, адрес, ID в мессенджере), иначе нам придется заблокировать аккаунт',
     tellAboutYourSecrets: 'Расскажи о своих секретах - эта информация непубличная, но ты сможешь открыть её из чата персонально для человека, которому доверяешь',
-    secretsAlert: 'Информация из этого раздела не будет публично доступной. <strong>Никто</strong> не увидит её на сайте Lay.',
+    secretsAlert: 'Информация из этого раздела не будет публично доступной. Никто не увидит её на сайте Lay.',
     photoAlert: 'Ты можешь сделать свои фото приватными, чтобы никто не видел их на твоём профиле Lay.',
     whyAddPhoto: 'Зачем добавлять фотки? Чтобы поднять твои шансы на успешное свидание! 76% $gender на Lay добавляют' +
       ' фотографии, их профили чаще просматривают и больше людей пишут им в чат. Если ты не хочешь раскрывать свою' +
-      ' личность на публике, просто пометь фото как <strong>приватное</strong>. В этом случае другие люди будут' +
+      ' личность на публике, просто пометь фото как приватное. В этом случае другие люди будут' +
       ' видеть, что у тебя есть фотки, но для их просмотра нужно твоё разрешение. Далее ты решаешь, давать разрешение или нет 😉',
     addInfoAboutYourSecrets: 'Добавь информацию о своих предпочтениях в сексе, ожидания от подарков спонсора и' +
-      ' возможность путешествовать. Этой информации <strong>не будет</strong> на странице твоего профиля на Lay. Ты' +
+      ' возможность путешествовать. Этой информации не будет на странице твоего профиля на Lay. Ты' +
       ' сможешь' +
-      ' открыть этот раздел персонально для другого пользователя через <strong>чат Lay</strong> - будет специальная' +
+      ' открыть этот раздел персонально для другого пользователя через чат Lay - будет специальная' +
       ' кнопка для этого.',
     whyAddInfoAboutYourSecrets: 'Зачем вообще это добавлять? Для твоего же удобства 🙂 Эти вопросы постоянно задают, и иметь ответы на них в одном месте, чтобы затем в 1 клик открыть доступ по желанию - это всё облегчит твою жизнь. Никаких бессмысленных разговоров и объяснений одних их тех же вещей по многу раз. Ты сможешь всегда отредактировать эту инфу.',
     noteThatBeforeModerator: 'Твои фотографии будет утверждать модератор. Ты можешь пометить фото как приватные: тогда они не будут показываться на твоей странице, но ты сможешь открыть их персонально в процессе общения с другим пользователем. Также ты можешь закрыть фото полностью, оставив доступ только для модераторов.',
@@ -821,9 +821,9 @@ const localisation = {
     personalInfoTitles: titlesLv,
     personalInfoPlaceholders: placeholdersEn,
     submitPersonalNumber: 'YJūsu tālruņa numurs nebūs redzams citiem lietotājiem. Tas ir nepieciešams, lai verificētu jūsu profilu. Lūdzu, iesniedziet savu personīgo numuru.',
-    addPersonalNumber: 'Lūdzu, pievienojiet savu tālruņa numuru. Tas nekad <strong>nebūs</strong> pieejams Lay' +
-      ' lietotājiem. Administratoriem tas ir nepieciešams, lai pārbaudītu jūsu profilu, bet <strong>nekad to' +
-      ' nevienam</strong> neatklāj. Mēs augstu vērtējam jūsu privātumu un tajā pašā laikā ir nepieciešams visiem Lay lietotājiem ir reāli cilvēki.',
+    addPersonalNumber: 'Lūdzu, pievienojiet savu tālruņa numuru. Tas nekad nebūs pieejams Lay' +
+      ' lietotājiem. Administratoriem tas ir nepieciešams, lai pārbaudītu jūsu profilu, bet nekad to' +
+      ' nevienam neatklāj. Mēs augstu vērtējam jūsu privātumu un tajā pašā laikā ir nepieciešams visiem Lay lietotājiem ir reāli cilvēki.',
     yourPhoneIsProtected: 'Jūsu tālruņa numuru aizsargā Vispārīgā datu aizsardzības regula (VDAR), kas ir Eiropas Savienības tiesību aktu regula. Jūs varat pieprasīt pilnīgu visas jūsu personiskās informācijas dzēšanu lay sazinoties ar mums support@lay.ooo.',
     completeMandatoryField: 'Obligāts lauks. Lūdzu, aizpildiet',
     displayNameLengthError: 'Minimālais vārda garums ir 2 simboli, tiek pieņemti tikai burti',
@@ -834,17 +834,17 @@ const localisation = {
     submit: 'Lesniegt',
     tellAboutYourself: 'Pastāsti citiem cilvēkiem par sevi. Visi lauki nav obligāti, pagaidām varat to izlaist un pievienot vēlāk. Lūdzu, nelietojiet stingru valodu un neatstājiet kontaktpersonas (tālruni, e-pastu, vietni, kurjera ID, adresi). Pretējā gadījumā jūsu konta darbība tiks apturēta.',
     tellAboutYourSecrets: 'Pastāstiet cilvēkiem par saviem noslēpumiem. Šī informācija nav publiska: jums būs jāatslēdz šī sadaļa jūsu profilā personīgi tērzēšanā.',
-    secretsAlert: 'Informācija no šīs iedaļas nebūs publiski pieejama. <strong>Neviens</strong> redzēs to Lay mājas' +
+    secretsAlert: 'Informācija no šīs iedaļas nebūs publiski pieejama. Neviens redzēs to Lay mājas' +
       ' lapā.',
     photoAlert: 'Jūs varat padarīt jūsu fotogrāfijas privāti, lai neviens redzēs jūsu profila lapā Lay.',
     whyAddPhoto: 'Kāpēc pievienot fotogrāfijas? Lai palielinātu jūsu izredzes uz veiksmīgu datumu 🙂 76% $gender Lay' +
       ' pievienot fotogrāfijas par sevi - viņu profili tiek apskatīti biežāk un vairāk cilvēku sāk tērzēšanu ar' +
-      ' tiem. Ja jūs nevēlaties atklāt savu personību, vienkārši izvēlieties <strong>Private</strong> iespēju. Šajā gadījumā' +
+      ' tiem. Ja jūs nevēlaties atklāt savu personību, vienkārši izvēlieties Private iespēju. Šajā gadījumā' +
       ' citi redzēs, ka jums ir privātas fotogrāfijas, un lūgs jūsu atļauju tos skatīt Lay Chat. Pēc tam izlemiet, vai vēlaties piešķirt piekļuvi vai 😉',
     addInfoAboutYourSecrets: 'Pievienot informāciju par jūsu dzimuma vēlmēm, dāvanu cerības un ceļojumu' +
-      ' opportunitites. Tas <strong>netiks rādīts</strong> jūsu profila lapā lay. Jūs varēsiet atvērt šo sadaļu' +
+      ' opportunitites. Tas netiks rādīts jūsu profila lapā lay. Jūs varēsiet atvērt šo sadaļu' +
       ' citai personai' +
-      ' privāti <strong>Lay Chat</strong>. Tam būs īpaša poga.',
+      ' privāti Lay Chat. Tam būs īpaša poga.',
     whyAddInfoAboutYourSecrets: 'Kāpēc pievienot šo anyway? Jūsu nākotnes ērtības 🙂 Šie jautājumi ir diezgan bieži uzdoti, un kam tas viss stuff vienā vietā, kas spēj dalīties ar 1 klikšķi būs tikai padarīt jūsu dzīvi vieglāku. Nav bezjēdzīgi sarunas un pašas lietas paskaidrots atkal un atkal. Jums būs iespēja rediģēt šo jebkurā laikā.',
     noteThatBeforeModerator: 'Lūdzu, ņemiet vērā, ka pirms moderators pieņem jūsu profila fotoattēlus, jūs nevarēsit tērzēt ar citiem lietotājiem. Lai gan jūs varat atzīmēt savus fotoattēlus kā privātus, un tie netiks rādīti publiski. Varat arī ierobežot, lai tos redzētu tikai moderatori. Tie būs jāatbloķē lietotājiem personīgi tērzēšanā.',
     uploadUpPhotos: 'Augšupielādējiet līdz pat 10 fotoattēliem reālajā dzīvē. Pārliecinieties, ka vismaz viens no šiem fotoattēliem ir jūsu seja skaidri redzams - tas ir nepieciešams pārbaudei. Ja vēlaties, jūs varat ierobežot publisku piekļuvi fotoattēliem ar seju. Nude fotoattēli ir labi, bet jūs nevarat tos publiskot',

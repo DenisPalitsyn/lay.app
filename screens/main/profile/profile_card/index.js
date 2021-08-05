@@ -6,7 +6,7 @@ import SkeletonPlaceholder from "react-native-skeleton-placeholder";
 import {LocalisationContext} from "../../../../localisation/context";
 import {logout} from "../../../../store/actions/authActions";
 import {useDispatch} from "react-redux";
-import RootNavigationContext from "../../root_navigation_context";
+import {RootNavigationContext} from "../../../../utils/context";
 
 export const ProfileCard = ({profileIsLoaded, userProfile, isUser, navigation}) => {
   const {profileOptions} = useContext(LocalisationContext);

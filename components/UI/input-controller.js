@@ -1,12 +1,13 @@
 import React, {useContext} from "react";
 import {Controller} from "react-hook-form";
 import {HelperText, TextInput} from "react-native-paper";
+import {View} from "react-native";
 import {LocalisationContext} from "../../localisation/context";
 
-export const InputController = ({control, name, rules, required, label, customValue, errors, inputProps}) => {
+export const InputController = ({control, name, rules, required, label, customValue, errors, inputProps, multiline, render}) => {
   const {completeMandatoryField} = useContext(LocalisationContext)
   return (
-    <>
+    <View>
       <Controller
         control={control}
         name={name}
@@ -24,13 +25,16 @@ export const InputController = ({control, name, rules, required, label, customVa
             onBlur={onBlur}
             onChangeText={onChange}
             value={customValue || value}
+            multiline={multiline}
+            numberOfLines={multiline ? 4 : undefined}
+            render={render}
             {...inputProps}
           />
         )}
       />
-      <HelperText type="error" visible={!!errors[name]}>
-        {errors[name]?.message || ''}
+      <HelperText type="error" visible={errors ? !!errors[name] : false}>
+        {(errors && errors[name]?.message) || ''}
       </HelperText>
-    </>
+    </View>
   )
 }

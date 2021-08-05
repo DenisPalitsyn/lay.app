@@ -39,8 +39,8 @@ export const SelectController = ({control, name, rules, required, label, errors,
           />
         )}
       />
-      <HelperText type="error" visible={!!errors[name]}>
-        {errors[name]?.message || ''}
+      <HelperText type="error" visible={errors ? !!errors[name] : false}>
+        {(errors && errors[name]?.message) || ''}
       </HelperText>
     </View>
   )

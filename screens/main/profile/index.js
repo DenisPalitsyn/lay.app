@@ -14,7 +14,7 @@ import {getUserPhoto} from "../../../store/actions/usersActions";
 import {profileData} from "../../../constants/profile";
 import {MainPhoto} from "./main_photo";
 import {ProfileCard} from "./profile_card";
-import UserContext from "../user_context";
+import {UserContext} from "../../../utils/context";
 
 export default function Profile({navigation}) {
   const {} = useContext(LocalisationContext);
